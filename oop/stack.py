@@ -9,3 +9,10 @@ class Stack:
         return f'<{type(self).__name__} at 0x{id(self):x}, size={len(self)}>'
     def __len__(self):
         return len(self._items)
+    def print(self):
+        try:
+            print(self._items)
+            #throw test exception to test error handling
+            exception = 1 / 0  # This will raise a ZeroDivisionError
+        except Exception as e:
+            print(f"Error printing stack: {e}")

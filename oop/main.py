@@ -6,8 +6,8 @@ def main():
     '''
     stack = Stack()
     stack.push("Hello")
-    stack.push("World")    
-    print(stack._items)  # Output: ['Hello', 'World']
+    stack.push("World")
+    stack.print()
 
 if __name__ == "__main__":
     main()
