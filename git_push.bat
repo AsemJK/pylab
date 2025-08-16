@@ -1,0 +1,9 @@
+@echo off
+echo Adding all changes...
+git add .
+echo Committing changes...
+git commit -m "Automated commit from batch script"
+echo Pushing to remote repository...
+git push origin main
+echo Done!
+pause
