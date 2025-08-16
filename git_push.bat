@@ -6,4 +6,4 @@ git commit -m "save"
 echo Pushing to remote repository...
 git push origin main
 echo Done!
-pause
+exit
