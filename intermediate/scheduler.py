@@ -18,6 +18,7 @@ def run_batch_file():
         print("Errors:", e.stderr)
 
 # Main loop to schedule the task
-while True:
+up_to = 6 #times to run the batch file
+for _ in range(up_to):
     run_batch_file()
     time.sleep(interval_seconds)
