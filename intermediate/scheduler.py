@@ -3,7 +3,7 @@ import time
 
 batch_file_path = 'git_push.bat'  # Replace with the actual path to your .bat file
 
-interval_seconds = 12000
+interval_seconds = 1200 # Interval in seconds (20 minutes)
 
 def run_batch_file():
     try:
