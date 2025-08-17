@@ -1,4 +1,4 @@
-# Book Notes
+# Python Distilled (Book Notes)
 ## Objects & Classes
 1. 
 
