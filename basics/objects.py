@@ -49,3 +49,28 @@ gc.collect()  # Force garbage collection
 from datetime import date
 my_date = date(2023, 10, 1)
 print(my_date)  # Output: 2023-10-01
+print(repr(my_date))  # Output: datetime.date(2023, 10, 1)
+
+
+lib = {
+    'name': 'example_lib',
+    'version': '1.0.0',
+}
+lib['func'] = lambda x: f"Function called with {x}"
+lib['math_func_abs'] = abs
+lib['math_func_max'] = max
+print(lib['func']("test"))  # Output: Function called with test
+if __name__ == "__main__":
+    print(lib['math_func_abs'](-10))  # Output: 10
+    print(lib['math_func_max'](1, 2, 3))  # Output: 3
+
+##
+from fractions import Fraction
+print(Fraction(3, 4))  # Output: 3/4
+
+#numpy
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)  # Output: [5 7 9]
+# print(np.add(a, b))  # Output: [5 7 9]
