@@ -1,5 +1,6 @@
 @echo off
 echo Adding all changes...
+git config --global --add safe.directory .
 git add .
 echo Committing changes...
 git commit -m "save"
