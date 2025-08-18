@@ -1,5 +1,8 @@
 import asyncio
-from asyncmanager import AsyncManager
+
+from basics.asyncmanager import AsyncManager
+from functions import some_func
+
 
 def main():
     '''Main function to execute the script.
@@ -20,6 +23,7 @@ async def main2():
         await m.yow()
 
 if __name__ == "__main__":
-    a = asyncio.run(async_main('Asem'))
+    #a = asyncio.run(async_main('Asem'))
     #a
-    asyncio.run(main2())
+    #asyncio.run(main)
+    some_func(1,200)
