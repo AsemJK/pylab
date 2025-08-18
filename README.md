@@ -4,4 +4,4 @@
 
 ### _Notes_
 * install numpy: for python 3 use "pip3 install numpy"
-
+[xAI API](https://x.ai/api)
