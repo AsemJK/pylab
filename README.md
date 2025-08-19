@@ -2,6 +2,6 @@
 ## Objects & Classes
 1. 
 
-### _Notes_
+### ***Notes***
 * install numpy: for python 3 use "pip3 install numpy"
-[xAI API](https://x.ai/api)
+1. [Numpy](https://github.com/AsemJK/pylab/blob/main/NUMPY.md)

@@ -1,8 +1,9 @@
 import asyncio
-
+import sys
 from basics.asyncmanager import AsyncManager
-from functions import some_func
-
+from basics.functions import some_func
+from maths import add
+import math as mt
 
 def main():
     '''Main function to execute the script.
@@ -27,3 +28,6 @@ if __name__ == "__main__":
     #a
     #asyncio.run(main)
     some_func(1,200)
+    print(add.sum(34,66))
+    print(mt.log2(64))
+    print(sys.path[5])
