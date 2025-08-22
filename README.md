@@ -19,3 +19,8 @@ print(counter)#Output: Counter({'a': 2, 'v': 1, 'd': 1, 'r': 1})
 for key, value in counter.items():
     print(f"{key} : {value}")
 ```
+3. Single underscore (_) used as a virtual seperator to make big numbers readable, example: 236_254_120 is equal to 236254120
+4.  (1, 2, 3) # tuple
+    [1, 2, 3] # list
+    {1, 2, 3} # set
+    {'x':1, 'y':2, 'z':3} # dict
