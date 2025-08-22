@@ -1,6 +1,9 @@
 import os
+import discord
 from discord import Client,Message,Intents
 from dotenv import load_dotenv
+
+print(discord.__version__)
 
 load_dotenv()
 TOKEN = os.getenv('DICORD_TOKEN')
