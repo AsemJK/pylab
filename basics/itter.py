@@ -1,9 +1,28 @@
+cart = [
+    { 'name': 'product 1', 'price': 100,'quantity':1 },
+    { 'name': 'product 2', 'price': 200,'quantity':2 },
+    { 'name': 'product 3', 'price': 300,'quantity':3 },
+
+    ]
+total = sum([item['price'] * item['quantity'] for item in cart])
+print(total)
+
+#dict for products totals
+g = {item['name']:item['price'] * item['quantity'] for item in cart}
+print(g)
+
+#total for all products
+total = sum(g.values())
+print(total)
+
+
+'''
 #set
 l = [34,(4,6),'me']
 st = {1,2,3,*l}
 print(st)
 print(type(st)) # <class 'set'>
-
+'''
 '''
 
 import array as arry
