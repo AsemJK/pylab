@@ -1,6 +1,6 @@
 #set
-
-st = {1,2,3}
+l = [34,(4,6),'me']
+st = {1,2,3,*l}
 print(st)
 print(type(st)) # <class 'set'>
 

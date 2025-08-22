@@ -24,3 +24,29 @@ for key, value in counter.items():
     [1, 2, 3] # list
     {1, 2, 3} # set
     {'x':1, 'y':2, 'z':3} # dict
+5. Unpacking
+    - Unpacking is a way to assign multiple values to multiple variables in a single line
+    - example:
+```python
+a, b, c = (1, 2, 3)
+print(a) # 1
+print(b) # 2
+print(c) # 3
+```
+    - example 2:
+```python
+a, b, *c = (1, 2, 3, 4, 5)
+print(a) # 1
+print(b) # 2
+print(c) # [3, 4, 5]
+```
+    - example 3:
+```python
+a, b, *c, d = (1, 2, 3, 4, 5)
+print(a) # 1
+print(b) # 2
+print(c) # [3, 4]
+print(d) # 5
+```
+
+
