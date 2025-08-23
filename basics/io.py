@@ -1,4 +1,24 @@
+try:
+    int('6.3')
+except Exception as e:
+    print(f'An error occurred: {e}')
 
+'''
+try:
+    print(1//0)
+except (TypeError,ValueError) as e:
+    print('TypeError Or ValueError:',e)
+except ZeroDivisionError as e:
+    print('ZeroDivisionError:',e)
+except Exception as e:
+    print('Exception:',e)
+
+try:
+    int('er')
+except TypeError as e:
+    print('TypeError:',e)
+except ValueError as e:
+    print('ValueError:',e)
 
 
 import os
@@ -14,3 +34,4 @@ with open(filename, 'r') as f:
     except IOError as e:
         if isinstance(e, IOError):
             print(f"Error reading file: {e}")
+'''
