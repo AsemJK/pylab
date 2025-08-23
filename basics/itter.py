@@ -1,6 +1,14 @@
+
+
+for i in "asem":#i here is named iteration variable
+    print(i)
+
+
+'''
 cart = [
     { 'name': 'product 1', 'price': 100,'quantity':1 },
     { 'name': 'product 2', 'price': 200,'quantity':2 },
+    { 'name': 'product 1', 'price': 100,'quantity':1 },
     { 'name': 'product 3', 'price': 300,'quantity':3 },
 
     ]
@@ -9,11 +17,29 @@ print(total)
 
 #dict for products totals
 g = {item['name']:item['price'] * item['quantity'] for item in cart}
-print(g)
-
+print(g) #Note: we lost one of 'product 1' lines,So total not matched
 #total for all products
 total = sum(g.values())
 print(total)
+
+
+#group by
+g = {}
+for item in cart:
+    name = item['name']
+    price = item['price']
+    quantity = item['quantity']
+    if name in g:
+        g[name]['price'] = price
+        g[name]['quantity'] += quantity
+    else:
+        g[name] = {'price':price,'quantity':quantity}
+print(g)
+
+#total using new dict
+total = sum([item['price'] * item['quantity'] for item in g.values()])
+print(total)
+'''
 
 
 '''
