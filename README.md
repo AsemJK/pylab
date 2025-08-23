@@ -79,6 +79,8 @@ for i in "asem":#i here is named iteration variable
     print(i)
 ```
 
+
+
 The scope of the iteration variable ("i" in our example) is
 not **private** to the for statement. If a previously defined variable has the same name, that
 value will be overwritten. Moreover, the iteration variable retains
