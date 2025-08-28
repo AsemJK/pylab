@@ -1,4 +1,14 @@
 #continue
+
+while True:
+    name = input("Enter your name (\"x\" for exit): ")
+    if name is not None:
+        if name == 'x':
+            exit(0)
+        else:
+            print(name)
+
+'''
 i=0
 while i<5:
     i+=1
@@ -14,3 +24,4 @@ for a,b in s:
 
 for x,y in enumerate(s):
     print(x,y)
+'''
