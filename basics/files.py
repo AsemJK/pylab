@@ -8,10 +8,11 @@ with open(filename,"r") as file:
     print(data)
 
 while True:
-    with open(filename,"wt") as file:
+    with open(filename,"a") as file:
         file.write(time.ctime() + "\n")
         if(time.ctime().startswith("21")):
             break
         time.sleep(60)
         file.flush()
+        #file.close()
    
