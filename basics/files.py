@@ -10,9 +10,7 @@ with open(filename,"r") as file:
 while True:
     with open(filename,"a") as file:
         file.write(time.ctime() + "\n")
-        if(time.ctime().startswith("21")):
-            break
-        time.sleep(60)
+        time.sleep(1200)
         file.flush()
         #file.close()
    
