@@ -139,4 +139,41 @@ while i<5:
         pass
     print(i)
 ```
-
+13. **Dictionary vs List**
+    - Dictionary: is a collection of key-value pairs , keys must be unique, values can be duplicated , Mutability: Mutable
+    - List: is a collection of values with an index , values can be duplicated, Mutability: Mutable
+- **examples**:
+```python
+my_list = [1, 2, 3, 4, 5]
+```
+- Dictionary:
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+```
+- Accessing values:
+```python
+print(my_dict['a']) # 1
+```
+- Adding a new key-value pair:
+```python
+my_dict['d'] = 4
+```
+- Removing a key-value pair:
+```python
+del my_dict['b']
+```
+- Iterating over keys:
+```python
+for key in my_dict:
+    print(key)
+```
+- Iterating over values:
+```python
+for value in my_dict.values():
+    print(value)
+```
+- Iterating over key-value pairs:
+```python
+for key, value in my_dict.items():
+    print(key, value)
+```
