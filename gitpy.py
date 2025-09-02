@@ -10,7 +10,7 @@ with open(filename,"r") as file:
 while True:
     with open(filename,"a") as file:
         file.write(time.ctime() + "\n")
-        time.sleep(1200)
+        time.sleep(600) #10 minutes
         file.flush()
         #file.close()
    
