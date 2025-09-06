@@ -186,3 +186,30 @@ for key, value in my_dict.items():
                   # if start is greater than end it will return empty list
                   # if start is negative it will start from the end of the list
                   # if end is negative it will end at the end of the list
+15. **Random**
+    To generate random numbers we use "randint" function, example
+    ```python
+    import random
+    r = random.randint(1, 10000)  # Returns a random integer between 1 and 10
+    print(r)
+    ```
+    To generate random float numbers we use "uniform" function, example
+    ```python
+    import random
+    r = random.uniform(1, 10000)  # Returns a random float number between 1 and 10
+    print(r)
+    ```
+    To generate random string we use "choice" function, example
+    ```python
+    import random
+    import string
+    r = random.choice(string.ascii_letters)  # Returns a random string
+    print(r)
+    ```
+16. **Class Name Convention**
+    - Class names should be in Pascal Case
+    - example:
+    ```python
+    class MyClass:
+        pass
+    ```
