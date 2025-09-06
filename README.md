@@ -177,3 +177,12 @@ for value in my_dict.values():
 for key, value in my_dict.items():
     print(key, value)
 ```
+14. a = ['a','b','c','d','e']
+    print(a[2:4]) # ['c','d'] note that the rang start from position 2 and take item at index = 2 but the end not included
+                  # so it will take item at index = 3
+                  # start <= range < end
+                  # if start is not specified it will start from index = 0
+                  # if end is not specified it will take all items from start to the end of the list
+                  # if start is greater than end it will return empty list
+                  # if start is negative it will start from the end of the list
+                  # if end is negative it will end at the end of the list
