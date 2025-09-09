@@ -213,3 +213,65 @@ for key, value in my_dict.items():
     class MyClass:
         pass
     ```
+17. **Protocols**
+    - Protocols are a way to define a set of methods that a class must implement in order to be considered a member of that protocol.
+    - example:
+    ```python
+    class MyProtocol:
+        def method1(self):
+            pass
+    ```
+    - Number Protocol: 
+        1- a + b equivalent to a.__add__(b) # addition
+        2- a - b equivalent to a.__sub__(b) # subtraction
+        3- a * b equivalent to a.__mul__(b) # multiplication
+        4- a / b equivalent to a.__truediv__(b) # division
+        5- a // b equivalent to a.__floordiv__(b) # floor division
+        6- a % b equivalent to a.__mod__(b) # modulus
+        7- a ** b equivalent to a.__pow__(b) # power
+        8- a << b equivalent to a.__lshift__(b) # left shift
+        9- a >> b equivalent to a.__rshift__(b) # right shift
+        10- a & b equivalent to a.__and__(b) # bitwise and
+        11- a | b equivalent to a.__or__(b) # bitwise or
+        12- a ^ b equivalent to a.__xor__(b) # bitwise xor (means exclusive or)
+        13- ~a equivalent to a.__invert__() # bitwise not
+        14- a += b equivalent to a.__iadd__(b) # inplace addition
+        15- a -= b equivalent to a.__isub__(b) # inplace subtraction
+        16- a *= b equivalent to a.__imul__(b) # inplace multiplication
+        17- a /= b equivalent to a.__itruediv__(b) # inplace division
+        18- a //= b equivalent to a.__ifloordiv__(b) # inplace floor division
+        19- a %= b equivalent to a.__imod__(b) # inplace modulus
+        20- a **= b equivalent to a.__ipow__(b) # inplace power
+        21- a <<= b equivalent to a.__ilshift__(b) # inplace left shift
+        22- a >>= b equivalent to a.__irshift__(b) # inplace right shift
+        23- a &= b equivalent to a.__iand__(b) # inplace bitwise and
+        24- a |= b equivalent to a.__ior__(b) # inplace bitwise or
+        25- a ^= b equivalent to a.__ixor__(b) # inplace bitwise xor
+        26- -a equivalent to __neg__(a) # negative
+        27- +a equivalent to __pos__(a) # positive
+        28- abs(a) equivalent to __abs__(a) # absolute value
+        29- int(a) equivalent to __int__(a) # convert to integer
+        30- float(a) equivalent to __float__(a) # convert to float
+        31- str(a) equivalent to __str__(a) # convert to string
+- **Strange example about protocols**:
+```python
+a = 43
+b = 6.7
+
+print(a.__add__(b)) 
+#result is NotImplemented, Why?
+# because a and b are of different types
+
+print(a.__radd__(b)) 
+#result is 50.7, Why?
+# because a is int and b is float, so a.__radd__(b) is called
+# and it is equivalent to b.__add__(a)
+print(b.__add__(a)) 
+#result is 50.7, Why?
+# because b is float and a is int, so b.__add__(a) is called
+# and it is equivalent to a.__radd__(b)
+```
+This example might seem surprising but it reflects the fact that integers don’t actually
+know anything about floating-point numbers. However, floating-point numbers do know
+about integers—as integers are, mathematically, a special kind of floating-point numbers.
+Thus, the reversed operand produces the correct answer
