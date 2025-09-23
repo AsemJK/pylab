@@ -20,6 +20,6 @@ while True:
     with open(new_filename,"w") as new_file:
         new_file.write(time.ctime() + "\n")
         new_file.flush()
-        time.sleep(300)
+        time.sleep(500)
         #new_file.close()
    
