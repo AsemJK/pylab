@@ -7,6 +7,6 @@ git add .
 echo Committing changes...
 git commit -m "save"
 echo Pushing to remote repository...
-git push origin main
+git push origin -f
 echo Done!
 exit
