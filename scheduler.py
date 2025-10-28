@@ -4,7 +4,7 @@ import time
 
 batch_file_path = 'git_push.bat'  # Replace with the actual path to your .bat file
 
-interval_seconds = 20 # Interval
+interval_seconds = 30 # Interval
 
 def run_batch_file():
     try:
@@ -19,7 +19,7 @@ def run_batch_file():
         print("Errors:", e.stderr)
 
 # Main loop to schedule the task
-up_to = 60 #times to run the batch file
+up_to = 600 #times to run the batch file
 for _ in range(up_to):
     filename = os.path.join(os.path.dirname(__file__), 'data.txt')
     with open(filename,"a") as file:
