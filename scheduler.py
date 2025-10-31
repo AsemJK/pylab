@@ -27,4 +27,5 @@ for _ in range(up_to):
         time.sleep(2)
         file.flush()
     run_batch_file()
+    print(time.ctime())
     time.sleep(interval_seconds)
