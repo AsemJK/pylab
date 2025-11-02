@@ -5,7 +5,7 @@ import random
 
 batch_file_path = 'git_push.bat'  # Replace with the actual path to your .bat file
 
-interval_seconds = 10 # Interval
+interval_seconds = 60 # Interval
 
 def run_batch_file():
     try:
@@ -29,4 +29,4 @@ for _ in range(up_to):
         file.flush()
     run_batch_file()
     print(time.ctime())
-    time.sleep(interval_seconds + random.randint(0,5))  # Sleep for the defined interval plus a small random delay
+    time.sleep(interval_seconds + random.randint(0,120))  # Sleep for the defined interval plus a small random delay
