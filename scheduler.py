@@ -5,7 +5,7 @@ import random
 
 batch_file_path = 'git_push.bat'  # Replace with the actual path to your .bat file
 
-interval_seconds = 270 # Interval
+interval_seconds = 470 # Interval
 
 def run_batch_file():
     try:
